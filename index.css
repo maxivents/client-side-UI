@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	
+	font-family: arial;
+}
+.container{
+	position: absolute;
+	width: 100%;
+	height: 500%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	color: #ffffff;
+	background-color: #111111;
+}
+
+.container .logo{
+	width: auto;
+	height: 20%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .logo .letter{
+	width: auto;
+	height: 10%;
+
+	margin: 0 1% 0 1%;
+}
+
+.logo .letter img{
+	width: auto;
+	height: 100%;
+}
+
+.logo .circle img{
+	transform:
+		scale(0.825)
+		translate(0, 30.25%);
+}
+
+.container #description{
+	width: auto;
+	height: 20%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.container #location{
+	width: auto;
+	height: 20%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container #location .map{
+	width: auto;
+	height: 100%;
+}
+
+.container #location .map img{
+	width: auto;
+	height: 100%;
+}
+
+.container #contact{
+	width: auto;
+	height: 20%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.container #imprint{
+	width: auto;
+	height: 20%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.navigation{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.navigation .bar{
+	width: 100%;
+	height: 10%;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	background-color: #222222;
+}
+
+.navigation .bar a{
+	width: 25%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+
+	color: #ffffff;
+	text-decoration: none;
+}
+.navigation .bar a:hover{
+	border-bottom: 1px solid #9b1d20;
+}
+
+.navigation .bar .description .logo{
+	width: auto;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation .bar .description .logo .letter{
+	width: auto;
+	height: 25%;
+
+	margin: 0 1% 0 1%;
+}
