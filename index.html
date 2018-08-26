@@ -10,11 +10,13 @@
 
 		<link rel='stylesheet' type='text/css' href='index.css'>
 
+		<script src='index.js'></script>
+
 	</head>
 
 	<body>
 		<div class='container'>
-			<div class='logo'>
+			<div id='logo'>
 				<div class='letter'>
 					<img src='https://cdn.rawgit.com/maxivents/font/155746f2/m.svg'>
 				</div>	
@@ -55,7 +57,7 @@
 			<div id='description'>
 				<h1><u>Wir verleihen die Technik, die Sie brauchen!</u></h1>
 				
-				Ja, wirklich!
+				
 			</div>
 
 			<div id='location'>
@@ -72,7 +74,7 @@
 			</div>
 
 			<div id='contact'>
-				<h1><u>Kontakt</u></h1>
+				Kontakt
 			</div>
 
 			<div id='imprint'>
@@ -82,7 +84,7 @@
 
 		<div class='navigation'>
 			<div class='bar'>
-				<a href='#description' class='description'>
+				<div class='description' onclick='moveby("description")'>
 					<div class='logo'>
 						<div class='letter'>
 							<img src='https://cdn.rawgit.com/maxivents/font/155746f2/m.svg'>
@@ -120,18 +122,22 @@
 							<img src='https://cdn.rawgit.com/maxivents/font/155746f2/s.svg'>
 						</div>
 					</div>
-				</a>
+				</div>
 				
-				<a href='#location' class='location'>Standort</a>
+				<div class='location' onclick='moveby("location")'>Standort</div>
 				
-				<a href='#contact' class='contact'>Kontakt</a>
+				<div class='contact' onclick='moveby("contact")'>Kontakt</div>
 				
-				<a href='#imprint' class='imprint'>Impressum</a>
+				<div class='imprint' onclick='moveby("imprint")'>Impressum</div>
 			</div>
 
-			<div class='up'></div>
+			<div class='up'>
+				<div class='arrow'></div>
+			</div>
 
-			<div class='down'></div>
+			<div class='down'>
+				<div class='arrow'></div>
+			</div>
 		</div>
 	</body>
 </html>
