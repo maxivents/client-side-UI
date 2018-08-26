@@ -47,13 +47,23 @@ body{
 }
 
 .container #description{
-	width: auto;
+	width: 100%;
 	height: 20%;
 
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
+	text-align: center;
+}
+
+.container #description .subject{
+	width: 60%;
+	height: auto;
+
+	margin: 0 auto;
+
+	text-align: justify;
 }
 
 .container #location{
@@ -78,23 +88,44 @@ body{
 }
 
 .container #contact{
-	width: auto;
+	width: 100%;
 	height: 20%;
 
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
+	text-align: center;
+}
+
+.container #contact .subject{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .container #imprint{
-	width: auto;
+	width: 100%;
 	height: 20%;
 
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
+	text-align: center;
+}
+
+.container #imprint .subject{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container #imprint .subject div{
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 .navigation{
@@ -156,10 +187,13 @@ body{
 
 	transform: translate(-50%, 0);
 
-	background-color: #ffffff;
+	background-color: #222222;
 	border-radius: 50%;
 
 	visibility: hidden;
+}
+.navigation .up:hover{
+	background-color: #ffffff;
 }
 
 .navigation .up .arrow{
@@ -171,7 +205,7 @@ body{
 	border-top: 2px solid #9b1d20;
 
 	transform: 
-		translate(-50%, -37.5%)
+		translate(-50%, -25%)
 		rotate(45deg);
 }
 
@@ -184,10 +218,13 @@ body{
 
 	transform: translate(-50%, 0);
 
-	background-color: #ffffff;
+	background-color: #222222;
 	border-radius: 50%;
 
 	visibility: hidden;
+}
+.navigation .down:hover{
+	background-color: #ffffff;
 }
 
 .navigation .down .arrow{
@@ -199,6 +236,6 @@ body{
 	border-top: 2px solid #9b1d20;
 
 	transform: 
-		translate(-50%, -62.5%)
+		translate(-50%, -75%)
 		rotate(225deg);
 }
