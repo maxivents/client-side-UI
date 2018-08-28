@@ -71,7 +71,7 @@
 			</div>
 
 			<div id='service'>
-				<div>
+				<div class='small'>
 					<h1>Kleines Event</h1>
 					<p>
 					<ul>
@@ -83,7 +83,7 @@
 					<div class='price'>55€</div>
 				</div>
 
-				<div>
+				<div class='middle'>
 					<h1>Mittleres Event</h1>
 					<p>
 					<ul>
@@ -96,7 +96,7 @@
 					<div class='price'>125€</div>
 				</div>
 
-				<div>
+				<div class='additional'>
 					<h1>Zusätzlicher Service</h1>
 					<p>
 					<ul>
@@ -108,19 +108,9 @@
 					<p>
 					<div class='price'>KOSTENLOS</div>
 				</div>
-			</div>
 
-			<div id='location'>
-				<div class='maps'>
-
-				</div>
-				
-				<div class='address'>
-					<h1><b>Anschrift</b></h1>
-					
-					Rembrandtstraße 17,<br>
-					41466 Neuss,<br>
-					Nordrhein-Westfalen
+				<div class='big'>
+					<b>Für große Events schicken wir Ihnen ein Angebot auf Nachfrage.</b>
 				</div>
 			</div>
 
@@ -128,7 +118,7 @@
 				<h1><b>Kontaktieren Sie uns!</b></h1>
 				<p>
 				<div class='subject'>
-					<form class='mail'>
+					<form class='mail' onsubmit='sendmail()' action=''>
 						<input type='email' placeholder='E-Mail' required>
 						
 						<textarea placeholder='Nachricht' required></textarea>
@@ -139,14 +129,13 @@
 					</form>
 
 					<div class='phone'>
-						<a href='tel:49-151-288-95970'><img src='/media/maximilian/maxivents/git/symbols/phone.svg'></img></a>
+						<a href='tel:49-172-802-2804'><img src='/media/maximilian/maxivents/git/symbols/phone.svg'></img></a>
 					</div>
 				</div>
 			</div>
 
 			<div id='imprint'>
 				<h1><b>Impressum nach Telemediengesetz §5</b></h1>
-				<p>
 				<div class='subject'>
 					<div>
 						<b>Anschrift</b>
@@ -167,7 +156,7 @@
 						<b>Kontakt</b>
 						<p>
 						<b>Mail:</b> info@maxivents.com<br>
-						<b>Tel.:</b> +49 (0)1512 8895970
+						<b>Tel.:</b> +49 (0)172 8022804
 					</div>
 				</div>
 			</div>
@@ -216,9 +205,7 @@
 				</div>
 			
 				<div class='service' onclick='moveby("service")'><b>Service</b></div>
-
-				<div class='location' onclick='moveby("location")'><b>Standort</b></div>
-				
+	
 				<div class='contact' onclick='moveby("contact")'><b>Kontakt</b></div>
 				
 				<div class='imprint' onclick='moveby("imprint")'><b>Impressum</b></div>

@@ -9,7 +9,7 @@ body{
 .container{
 	position: absolute;
 	width: 100%;
-	height: 1000%;
+	height: 500%;
 
 	display: flex;
 	flex-direction: column;
@@ -21,7 +21,7 @@ body{
 
 .container #logo{
 	width: auto;
-	height: 10%;
+	height: 20%;
 
 	display: flex;
 	flex-direction: row;
@@ -50,7 +50,7 @@ body{
 
 .container #description{
 	width: 100%;
-	height: 10%;
+	height: 20%;
 
 	display: flex;
 	flex-direction: column;
@@ -72,37 +72,45 @@ body{
 
 .container #service{
 	width: 100%;
-	height: 10%;
+	height: 20%;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-content: center;
 }
 
-.container #location{
-	width: auto;
-	height: 10%;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
+.container #service .small{
+	padding: 1%;
+	border: 5px solid #9b1d20;
+	border-radius: 10px;
 }
 
-.container #location .map{
-	width: auto;
-	height: 50%;
+.container #service .middle{
+	padding: 1%;
+	border: 5px solid #9b1d20;
+	border-radius: 10px;
+}
 
-	border: 0;
-	font-size: large;
+.container #service .additional{
+	padding: 1%;
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+}
+
+.container #service .big{
+	width: 100%;
+	height: auto;
+
+	margin-top: 5%;
+
+	text-align: center;
 }
 
 .container #contact{
 	width: 100%;
-	height: 10%;
+	height: 20%;
 
 	display: flex;
 	flex-direction: column;
@@ -151,6 +159,7 @@ body{
 	width: 100%;
 	height: 40%;
 
+	padding: 5px;
 	background-color: #222222;
 	border: 0px solid #222222;
 	border-radius: 10px;
@@ -203,7 +212,7 @@ body{
 
 .container #imprint{
 	width: 100%;
-	height: 10%;
+	height: 20%;
 
 	display: flex;
 	flex-direction: column;
@@ -218,6 +227,8 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	margin-top: 5%;
 }
 
 .container #imprint .subject div{
@@ -244,7 +255,7 @@ body{
 }
 
 .navigation .bar div{
-	width: 20%;
+	width: 25%;
 	height: 100%;
 
 	display: flex;

@@ -1,5 +1,5 @@
 var position=0;
-var elements=['logo', 'description', 'service', 'location', 'contact', 'imprint'];
+var elements=['logo', 'description', 'service', 'contact', 'imprint'];
 
 window.onload = function(){
 	moveby(0);
@@ -70,4 +70,15 @@ function moveby(direction){
 	if(position > 0){
 		document.querySelector('.' + elements[position]).style.borderBottom = '1px solid #9b1d20';
 	}
+}
+
+function sendmail() {
+	var request = new XMLHttpRequest();
+	request.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			document.querySelector('.output').innerHTML = this.responseText;
+		}
+	}
+	request.open('POST', 'mail.php', true);
+	request.send();
 }
