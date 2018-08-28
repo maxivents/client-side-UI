@@ -1,5 +1,5 @@
 var position=0;
-var elements=['logo', 'description', 'location', 'contact', 'imprint'];
+var elements=['logo', 'description', 'service', 'location', 'contact', 'imprint'];
 
 window.onload = function(){
 	moveby(0);
@@ -16,11 +16,11 @@ window.onload = function(){
 				moveby(-1);
 			}
 		} else if(e.keyCode == 39){
-			if(position < 4){
+			if(position < elements.length - 1){
 				moveby(1);
 			}
 		} else if(e.keyCode == 40){
-			if(position < 4){
+			if(position < elements.length - 1){
 				moveby(1);
 			}
 		}
@@ -38,7 +38,7 @@ window.onload = function(){
 function moveby(direction){
 	document.querySelector('.' + elements[position]).style.borderBottom = '';
 	
-	position=Math.trunc(window.scrollY/window.innerHeight);
+	position=Math.trunc(window.scrollY/(document.querySelector('.container').offsetHeight/elements.length));
 
 	if(isNaN(direction)){
 		for(i = 0; i < elements.length; i++){
@@ -56,7 +56,7 @@ function moveby(direction){
 
 	document.querySelector('#' + elements[position]).scrollIntoView({behavior: 'smooth'});
 	
-	if(position == 4){
+	if(position == elements.length - 1){
 		document.querySelector('.up').style.visibility = 'visible';
 		document.querySelector('.down').style.visibility = 'hidden';
 	} else if(position == 0){

@@ -58,14 +58,61 @@
 				<h1><b>Wir haben die Technik, die Sie brauchen!</b></h1>
 				<p>
 				<div class='subject'>
-					Wir vermieten Veranstaltungstechnik für jede Art von Veranstaltung.
-					Egal ob Meeting oder Party, zu Hause oder auswärts, wir vermieten nicht nur, sondern bieten Ihnen kostenlos einen zusätlichen Service an.
+					Sie planen ein Event, und wissen noch nicht genau, wie Sie es umsetzen wollen?
+					Oder haben Sie bereits ein Vorstellung, Ihnen fehlt aber das nötige Equipment?
+					Dann sind Sie bei uns genau richtig!
+					Wir beraten Sie nähmlich nicht nur im Vorfeld, sondern wir organisieren Ihnen direkt das, was Sie für Ihre Veranstaltung brauchen.
+					Schauen Sie sich unsere Angebote an oder kontaktieren Sie uns direkt!
+					<p>
+					Unser Unternehmen zeichnet sich durch junge, kompetente und motivierte Mitarbeiter aus. 
+					Wir legen viel Wert auf Kundenzufriedenheit und helfen Ihnen deshalb bei jeder Frage gerne weiter.
+					Unsere Kernkompetenzen sind Licht-, Ton-, Medien- sowie Informationstechnik.
+				</div>
+			</div>
+
+			<div id='service'>
+				<div>
+					<h1>Kleines Event</h1>
+					<p>
+					<ul>
+						<li></li>
+						<li>Dekorationsbeleuchtung</li>
+
+					</ul>
+					<p>
+					<div class='price'>55€</div>
+				</div>
+
+				<div>
+					<h1>Mittleres Event</h1>
+					<p>
+					<ul>
+						<li>Soundanlage</li>
+						<li>Dekorationsbeleuchtung</li>
+						<li></li>
+
+					</ul>
+					<p>
+					<div class='price'>125€</div>
+				</div>
+
+				<div>
+					<h1>Zusätzlicher Service</h1>
+					<p>
+					<ul>
+						<li>Beamer + weitere Medientechnik</li>
+						<li>DJ</li>
+						<li>Band</li>
+
+					</ul>
+					<p>
+					<div class='price'>KOSTENLOS</div>
 				</div>
 			</div>
 
 			<div id='location'>
-				<div class='map'>
-					<img src='https://cdn.rawgit.com/maxivents/logo/f8d496b3/circle.svg'>
+				<div class='maps'>
+
 				</div>
 				
 				<div class='address'>
@@ -81,12 +128,18 @@
 				<h1><b>Kontaktieren Sie uns!</b></h1>
 				<p>
 				<div class='subject'>
-					<div class='mail'>
+					<form class='mail'>
+						<input type='email' placeholder='E-Mail' required>
+						
+						<textarea placeholder='Nachricht' required></textarea>
 
-					</div>
+						<input type='submit' value='SENDEN'>
+
+						<div class='output'></div>
+					</form>
 
 					<div class='phone'>
-
+						<a href='tel:49-151-288-95970'><img src='/media/maximilian/maxivents/git/symbols/phone.svg'></img></a>
 					</div>
 				</div>
 			</div>
@@ -114,7 +167,7 @@
 						<b>Kontakt</b>
 						<p>
 						<b>Mail:</b> info@maxivents.com<br>
-						<b>Tel.:</b> +49 (0)1512 28895970
+						<b>Tel.:</b> +49 (0)1512 8895970
 					</div>
 				</div>
 			</div>
@@ -161,7 +214,9 @@
 						</div>
 					</div>
 				</div>
-				
+			
+				<div class='service' onclick='moveby("service")'><b>Service</b></div>
+
 				<div class='location' onclick='moveby("location")'><b>Standort</b></div>
 				
 				<div class='contact' onclick='moveby("contact")'><b>Kontakt</b></div>
