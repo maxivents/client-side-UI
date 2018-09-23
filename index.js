@@ -1,5 +1,6 @@
 var position=0;
-var elements=['logo', 'description', 'service', 'contact', 'imprint'];
+const elements=['logo', 'description', 'service', 'contact', 'imprint'];
+const validation=/^.+@\w+(\.\w+)+$/g;
 
 window.onload = function(){
 	moveby(0);
@@ -32,6 +33,22 @@ window.onload = function(){
 
 	document.querySelector('.down').addEventListener('click', function(){
 		moveby(1);
+	});
+
+	document.querySelector('input[type=button]').addEventListener('click', function(){
+		if(validation.test(document.querySelector('input[type=email]').value)){
+			if(document.querySelector('textarea').value){
+				if(document.querySelector('input[type=checkbox]').checked){
+					sendmail();
+				} else{
+					alert('Um fortzufahren müssen Sie die Datenschutzerklärung zur Kenntnis nehmen.')
+				}
+			} else{
+				alert('Eine Nachricht ist keine Nachricht, wenn keine Nachricht vorhanden ist... :)');
+			}
+		} else {
+			alert('Bitte geben Sie eine gültige Email-Adresse ein.');
+		}
 	});
 }
 
@@ -76,9 +93,14 @@ function sendmail() {
 	var request = new XMLHttpRequest();
 	request.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			document.querySelector('.output').innerHTML = this.responseText;
+			document.querySelector('.mail').innerHTML = this.responseText;
 		}
 	}
-	request.open('POST', 'mail.php', true);
-	request.send();
+	request.open('POST', 'http://maxivents.com/mail.php', true);
+	request.setRequestHeader('Content-Type', 'application/json');
+	mail={
+		email: String(document.querySelector('input[type=email]').value),
+		massage: String(document.querySelector('textarea').value)
+	}
+	request.send(JSON.stringify(mail));
 }
