@@ -89,11 +89,12 @@ body{
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
 .container #contact .subject{
-	width: 100%;
+	width: 90%;
 	height: 45%;
 
 	display: flex;
@@ -103,9 +104,6 @@ body{
 }
 
 .container #contact .subject .mail{
-	width: 30%;
-	height: 100%;
-	
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -117,8 +115,9 @@ body{
 
 .container #contact .subject .mail input[type=email]{
 	width: 100%;
-	height: 15%;
+	height: 10%;
 
+	padding: 5px;
 	background-color: #222222;
 	border: 0px solid #9b1d20;
 	border-radius: 5px;
@@ -164,7 +163,7 @@ body{
 
 .container #contact .subject .mail input[type=button]{
 	width: 50%;
-	height: 20%;
+	height: 10%;
 
 	background-color: #222222;
 	border: 0px solid #9b1d20;
@@ -176,26 +175,18 @@ body{
 	color: #9b1d20;
 }
 
-.container #contact .subject .phone{
-	width: auto;
-	height: 100%;
+.container #contact .subject .phone{	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
 
 	z-index: 2;
 }
 
 .container #contact .subject .phone a{
-	width: auto;
-	height: 100%;
-}
-
-.container #contact .subject .phone a img{
-	width: auto;
-	height: 100%;
-
-	border-radius: 50%;
-}
-.container #contact .subject .phone a img:hover{
-	border: 1px solid #9b1d20;
+	color: #9b1d20;
+	text-decoration: none;
 }
 
 .container #imprint{
